@@ -59,17 +59,17 @@ class TicTacToe
   end
   
   def won?
-   WIN_COMBINATIONS.each do |combination|
-     index1 = combination[0]
-     index2 = combination[1]
-     index3 = combination[2]
-     if (@board[index1] != " ") &&
-       (@board[index1] == @board[index2]) &&
-       (@board[index2] == @board[index3])
-       return combination
-     end #if
-   end #each
-   false
+  # WIN_COMBINATIONS.each do |combination|
+  #   index1 = combination[0]
+  #   index2 = combination[1]
+  #   index3 = combination[2]
+  #   if (@board[index1] != " ") &&
+  #     (@board[index1] == @board[index2]) &&
+  #     (@board[index2] == @board[index3])
+  #     return combination
+  #   end #if
+  # end #each
+  # false
    WIN_COMBINATIONS.find{|combo| (@board[combo[0]] != " ") &&
        (@board[combo[0]] == @board[combo[1]]) &&
        (@board[combo[1]] == @board[combo[2]])  }
