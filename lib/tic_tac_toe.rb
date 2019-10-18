@@ -47,9 +47,11 @@ class TicTacToe
   end
     
   def turn
+    puts "Please enter position: "
     user_input = gets.chomp
     index = input_to_index(user_input)
       while(!valid_move?(index)) do
+        puts "Please enter position: "
         user_input = gets.chomp
         index = input_to_index(user_input)
       end
