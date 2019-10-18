@@ -107,6 +107,12 @@ class TicTacToe
   end
   
   def winner
+    if won?
+      win_array = won?
+      win_array[0]
+      
+    end
+    
   #   WIN_COMBINATIONS.each do |combination|
   #   index1 = combination[0]
   #   index2 = combination[1]
