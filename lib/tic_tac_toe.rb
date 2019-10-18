@@ -70,9 +70,9 @@ class TicTacToe
      end #if
    end #each
    false
-   WIN_COMBINATIONS.find{|combo| (@board[index1] != " ") &&
-       (@board[index1] == @board[index2]) &&
-       (@board[index2] == @board[index3])  }
+   WIN_COMBINATIONS.find{|combo| (@board[combo[0]] != " ") &&
+       (@board[combo[0]] == @board[combo[1]]) &&
+       (@board[combo[1]] == @board[combo[2]])  }
   end
   
   def full?
