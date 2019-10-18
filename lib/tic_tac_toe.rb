@@ -69,7 +69,10 @@ class TicTacToe
        return combination
      end #if
    end #each
-   return false
+   false
+   WIN_COMBINATIONS.find{|combo| (@board[index1] != " ") &&
+       (@board[index1] == @board[index2]) &&
+       (@board[index2] == @board[index3])  }
   end
   
   def full?
