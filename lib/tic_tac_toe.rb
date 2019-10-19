@@ -109,7 +109,7 @@ class TicTacToe
   def winner
     if won?
       win_array = won?
-      index = @board[win_array[0]]
+      @board[win_array[0]]
     end
   end
     
@@ -130,6 +130,7 @@ class TicTacToe
     until(over?)
       turn
     end
+    puts "Congratulations #{winner}!"
   end
   
 end
