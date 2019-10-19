@@ -112,7 +112,6 @@ class TicTacToe
       index = @board[win_array[0]]
       puts "Congratulations #{index}!"
     end
-    
   end
     
   #   WIN_COMBINATIONS.each do |combination|
@@ -126,7 +125,7 @@ class TicTacToe
   #   end #if
   # end #each
   # return nil
-  end
+
   
   def play
     until(over?)
