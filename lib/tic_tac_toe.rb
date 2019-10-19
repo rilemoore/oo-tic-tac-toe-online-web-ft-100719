@@ -109,9 +109,11 @@ class TicTacToe
   def winner
     if won?
       win_array = won?
-      @board[win_array[0]]
-      
+      index = @board[win_array[0]]
+      puts "Congratulations #{index}!"
     end
+    
+  end
     
   #   WIN_COMBINATIONS.each do |combination|
   #   index1 = combination[0]
