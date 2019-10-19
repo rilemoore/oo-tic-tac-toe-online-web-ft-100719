@@ -110,7 +110,6 @@ class TicTacToe
     if won?
       win_array = won?
       index = @board[win_array[0]]
-      puts "Congratulations #{index}!"
     end
   end
     
